@@ -68,6 +68,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: ubuntu-18.04
+      name: 'default'
     environment: dev
     variables:
     - group: Release
